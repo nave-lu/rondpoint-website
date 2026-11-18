@@ -141,7 +141,7 @@
   "admin": {
     "enabled": false,
     "$enabled": "Dashboard freischalten: true. Solange false, zeigt /admin/ „Am Opbau“ und /admin/data.json ist leer.",
-    "repo": "xjamie007/rondpoint-website",
+    "repo": "nave-lu/rondpoint-website",
     "branch": "main"
   },
   "showOpenPoints": false,
