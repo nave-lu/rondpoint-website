@@ -31,7 +31,7 @@
   // täglich aufräumen: Anfragen nach 90 Tagen, IP-Hashes und Fehlversuche nach 24 Stunden
   "triggers": { "crons": ["30 3 * * *"] },
   "vars": {
-    "GITHUB_REPO": "xjamie007/rondpoint-website",
+    "GITHUB_REPO": "nave-lu/rondpoint-website",
     "GITHUB_BRANCH": "main",
     // Formulare per Mail über Brevo (worker/inquiry.ts). Der Schlüssel MAIL_API_KEY ist ein Secret im Dashboard.
     "MAIL_PROVIDER": "brevo",

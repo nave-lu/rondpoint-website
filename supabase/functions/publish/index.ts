@@ -4,7 +4,7 @@
  *
  * Geheimnisse (supabase secrets set …):
  *   GITHUB_TOKEN     Fine-grained Token, nur dieses Repository, „Contents: Read and write“
- *   GITHUB_REPO      xjamie007/rondpoint-website
+ *   GITHUB_REPO      nave-lu/rondpoint-website
  *   GITHUB_BRANCH    main (Standard)
  *   ALLOWED_ORIGINS  Adressen der Website, kommagetrennt
  *   ADMIN_EMAILS     Pflicht: nur diese Konten dürfen speichern (kommagetrennt)

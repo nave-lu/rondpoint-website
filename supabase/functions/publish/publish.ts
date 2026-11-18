@@ -16,7 +16,7 @@ import { ContentError, toFiles, type EditState, type FileChange, type RepoSnapsh
 export interface GitEnv {
   /** Fine-grained Token: nur dieses Repository, „Contents: Read and write“ */
   GITHUB_TOKEN: string;
-  /** z. B. xjamie007/rondpoint-website */
+  /** z. B. nave-lu/rondpoint-website */
   GITHUB_REPO: string;
   GITHUB_BRANCH?: string;
   /** nur für Tests: andere Adresse der GitHub-API */
@@ -29,7 +29,7 @@ export interface Env extends GitEnv {
   SUPABASE_SERVICE_ROLE_KEY?: string;
   /** kommagetrennt, Pflicht: nur diese Konten dürfen speichern (ohne Liste speichert niemand) */
   ADMIN_EMAILS?: string;
-  /** kommagetrennt, z. B. https://www.rondpoint.lu,https://xjamie007.github.io */
+  /** kommagetrennt, z. B. https://www.rondpoint.lu,https://nave-lu.github.io */
   ALLOWED_ORIGINS?: string;
 }
 

@@ -352,7 +352,7 @@ Auf Cloudflare liegt alles an einem Ort, kostenlos:
 - **Seiten:** Ein Worker liefert die gebauten Seiten aus `dist/` aus (`wrangler.jsonc`).
 - **Admin-Bereich und Formulare:** Derselbe Worker beantwortet `/api/*` (`worker/`).
 - **Datenbank:** D1 in der EU, die Datenbank-ID steht in `wrangler.jsonc`. Die Tabellen legt der Worker beim ersten Aufruf selbst an (`worker/schema.ts`).
-- **Veröffentlichen:** Cloudflare baut selbst aus GitHub (Workers Builds, verbunden mit `xjamie007/rondpoint-website`, Branch `main`). Jeder Push wird veröffentlicht, auch der tägliche Bestand-Abgleich und das Speichern im Admin-Bereich.
+- **Veröffentlichen:** Cloudflare baut selbst aus GitHub (Workers Builds, verbunden mit `nave-lu/rondpoint-website`, Branch `main`). Jeder Push wird veröffentlicht, auch der tägliche Bestand-Abgleich und das Speichern im Admin-Bereich.
 
 **Einstellungen in Cloudflare** (Workers & Pages → `rondpoint-website` → Settings):
 1. **Build:** Build command `npm run build`, Deploy command `npx wrangler deploy`. Unter Build → Variables `PUBLIC_HOSTING` = `cloudflare`. Später kommt `SITE_URL` = `https://www.rondpoint.lu` dazu, sobald die Domain verbunden ist; `PUBLIC_INQUIRY_URL` = `/api/inquiry`, sobald die Formulare per Mail gehen.
@@ -405,7 +405,7 @@ Dasselbe Supabase-Projekt dient auch den Formularen (siehe oben).
    - Ablaufdatum im Kalender eintragen.
 6. **Geheimnisse setzen:**
    ```bash
-   supabase secrets set GITHUB_TOKEN=github_pat_… GITHUB_REPO=xjamie007/rondpoint-website GITHUB_BRANCH=main ALLOWED_ORIGINS=https://xjamie007.github.io,https://www.rondpoint.lu ADMIN_EMAILS=chef@…,info@nave.lu
+   supabase secrets set GITHUB_TOKEN=github_pat_… GITHUB_REPO=nave-lu/rondpoint-website GITHUB_BRANCH=main ALLOWED_ORIGINS=https://nave-lu.github.io,https://www.rondpoint.lu ADMIN_EMAILS=chef@…,info@nave.lu
    ```
    `ADMIN_EMAILS` ist **Pflicht**: Nur diese E-Mail-Adressen dürfen speichern. Ohne Liste lehnt die Function jedes Speichern ab. Das ist der zweite Schutz, falls die Registrierung in Schritt 3 doch offen ist. Ein neues Konto braucht also zwei Schritte: anlegen (Schritt 4) und hier eintragen.
 7. **Function veröffentlichen:** `supabase functions deploy publish --no-verify-jwt`. Die Function prüft die Anmeldung selbst. `--no-verify-jwt` (wie `verify_jwt = false` in `supabase/config.toml`) ist nötig, sonst blockiert Supabase schon die Vorabfrage des Browsers.
