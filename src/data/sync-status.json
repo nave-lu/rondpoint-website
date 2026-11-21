@@ -1,13 +1,14 @@
 {
-  "lastSuccess": "2026-11-20T13:03:30.664Z",
-  "lastRun": "2026-11-20T13:03:30.664Z",
+  "lastSuccess": "2026-11-21T12:45:37.426Z",
+  "lastRun": "2026-11-21T12:45:37.426Z",
   "status": "ok",
   "source": "movingcar",
-  "count": 13,
+  "count": 14,
   "warnings": [
     "r141522: Leistung (CV) 1632 ist unplausibel und wird nicht angezeigt",
     "r141522: Leistung (kW) 1200 ist unplausibel und wird nicht angezeigt",
     "r141522: Hubraum (cm³) 21912 ist unplausibel und wird nicht angezeigt",
+    "Neuwagen ohne WLTP-Verbrauch/CO₂: r148258 Volkswagen Golf GTI (volkswagen-golf-gti-2026-r148258) – in vehicle-overrides.json ergänzen",
     "Neuwagen ohne WLTP-Verbrauch/CO₂: r148242 Volkswagen Touran (volkswagen-touran-r148242) – in vehicle-overrides.json ergänzen",
     "Neuwagen ohne WLTP-Verbrauch/CO₂: r148250 Volkswagen Touran (volkswagen-touran-r148250) – in vehicle-overrides.json ergänzen",
     "Neuwagen ohne WLTP-Verbrauch/CO₂: r139107 Volkswagen Golf (volkswagen-golf-2026-r139107) – in vehicle-overrides.json ergänzen",
