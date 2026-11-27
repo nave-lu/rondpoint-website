@@ -1,9 +1,9 @@
 {
-  "lastSuccess": "2026-11-26T13:58:39.865Z",
-  "lastRun": "2026-11-26T13:58:39.865Z",
+  "lastSuccess": "2026-11-27T13:57:20.387Z",
+  "lastRun": "2026-11-27T13:57:20.387Z",
   "status": "ok",
   "source": "movingcar",
-  "count": 14,
+  "count": 13,
   "warnings": [
     "Neuwagen ohne WLTP-Verbrauch/CO₂: r148258 Volkswagen Golf GTI (volkswagen-golf-gti-2026-r148258) – in vehicle-overrides.json ergänzen",
     "Neuwagen ohne WLTP-Verbrauch/CO₂: r148242 Volkswagen Touran (volkswagen-touran-r148242) – in vehicle-overrides.json ergänzen",
